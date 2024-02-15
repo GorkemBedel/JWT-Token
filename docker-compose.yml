@@ -1,0 +1,15 @@
+version: '3,8'
+
+services:
+  db:
+    image: mysql
+    restart: always
+    container_name: jwtToken-db
+    environment:
+      MYSQL_ROOT_PASSWORD: gorkem
+      MYSQL_DATABASE: jwtToken-db
+      MYSQL_USER: gorkem1
+      MYSQL_PASSWORD: pass
+    ports:
+      - '3306:3306'
+
